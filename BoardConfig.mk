@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/v1awifi
+LOCAL_PATH := device/samsung/v2awifi
 
 # Platform
 BOARD_VENDOR := samsung
@@ -41,7 +41,7 @@ BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/libbt_vndcfg.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Bootloader
-TARGET_OTA_ASSERT_DEVICE := v1awifi
+TARGET_OTA_ASSERT_DEVICE := v2awifi
 
 # Camera
 BOARD_CAMERA_SNUMINTS := 15
@@ -58,7 +58,7 @@ COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := cyanogenmod_deathly_v1awifi_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_deathly_v2awifi_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos5420
 
 # Battery
@@ -99,7 +99,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 IR_HAS_ONE_FREQ_RANGE := true
 
 # Hardware
-BOARD_HARDWARE_CLASS += device/samsung/v1awifi/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/v2awifi/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
 # Media
@@ -152,7 +152,7 @@ BOARD_USES_GSC_VIDEO := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/v1awifi/sepolicy
+    device/samsung/v2awifi/sepolicy
 
 # Webkit
 ENABLE_WEBGL := true
@@ -172,4 +172,4 @@ WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/dhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA          := "/system/etc/wifi/bcmdhd_sta.bin"
 
 # inherit from the proprietary version
--include vendor/samsung/v1awifi/BoardConfigVendor.mk
+-include vendor/samsung/v2awifi/BoardConfigVendor.mk
