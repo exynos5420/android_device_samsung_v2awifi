@@ -50,12 +50,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libboringssl-compat
 
+# Camera
 PRODUCT_PACKAGES += \
     camera.universal5420 \
     libhwjpeg
 
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
+
+# Remove packages that do not work well
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
