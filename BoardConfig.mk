@@ -98,9 +98,6 @@ TARGET_KERNEL_HAVE_NTFS := true
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-# IR Blaster
-IR_HAS_ONE_FREQ_RANGE := true
-
 # Hardware
 BOARD_HARDWARE_CLASS += device/samsung/v2awifi/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
