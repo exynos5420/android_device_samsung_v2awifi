@@ -10,10 +10,10 @@ PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SM-T900
 
-# Inherit some common CM stuff.
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
-PRODUCT_NAME := cm_v2awifi
+PRODUCT_NAME := lineage_v2awifi
 PRODUCT_DEVICE := v2awifi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
