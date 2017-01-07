@@ -4,11 +4,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from v2awifi device
 $(call inherit-product, device/samsung/v2awifi/device.mk)
 
-PRODUCT_NAME := full_v2awifi
-PRODUCT_DEVICE := v2awifi
 PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-T900
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
