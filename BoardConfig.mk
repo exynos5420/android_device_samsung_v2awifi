@@ -29,7 +29,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 TARGET_OTA_ASSERT_DEVICE := v2wifixx,v2awifi
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_deathly_v2awifi_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_deathly_v2awifi_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
