@@ -32,6 +32,10 @@ TARGET_OTA_ASSERT_DEVICE := v2wifixx,v2awifi
 TARGET_KERNEL_CONFIG := lineageos_deathly_v2awifi_defconfig
 BOARD_CUSTOM_BOOTIMG := true
 
+# GPS
+TARGET_LD_SHIM_LIBS += \
+	/system/bin/gpsd|libdmitry.so
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
