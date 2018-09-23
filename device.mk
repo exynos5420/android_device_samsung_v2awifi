@@ -16,5 +16,9 @@
 
 LOCAL_PATH := device/samsung/v2awifi
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.target.rc
+
 # Inherit from v2a-common
 $(call inherit-product, device/samsung/v2a-common/device-common.mk)
