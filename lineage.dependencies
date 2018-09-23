@@ -1,0 +1,6 @@
+[
+    {
+        "repository": "android_device_samsung_v2a-common",
+        "target_path": "device/samsung/v2a-common"
+    }
+]
