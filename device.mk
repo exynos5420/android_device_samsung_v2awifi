@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
+# Persistent partition hack
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/backuptool.sh:install/bin/backuptool.sh
+
 PRODUCT_PACKAGES += \
     fstab.universal5420 \
     init.target.rc \
