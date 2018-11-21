@@ -15,7 +15,7 @@ check_persdata()
 {
   for PERSDATA in $(find /dev/block/platform/ -name PERSDATA)
   do
-    e2fsck $PERSDATA
+    e2fsck -y $PERSDATA
     [ $? -ne 0 ] && mke2fs $PERSDATA
     break
   done
