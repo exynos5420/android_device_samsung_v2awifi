@@ -68,6 +68,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.universal5420.rc
 
+# System Properties
+$(call inherit-product, device/samsung/v2awifi/system_prop.mk)
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
