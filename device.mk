@@ -68,9 +68,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.universal5420.rc
 
-# Sensors wrapper
-PRODUCT_PACKAGES += \
-    sensors.universal5420
+# System Properties
+$(call inherit-product, device/samsung/v1awifi/system_prop.mk)
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
