@@ -10,6 +10,8 @@ set -e
 
 export DEVICE=v2awifi
 export DEVICE_COMMON=v2a-common
+export DEVICE_UNIVERSAL_COMMON=universal5420-common
 export VENDOR=samsung
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
+"./../../${VENDOR}/${DEVICE_UNIVERSAL_COMMON}/setup-makefiles.sh" "$@"
