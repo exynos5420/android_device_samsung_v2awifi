@@ -17,8 +17,10 @@
 
 set -e
 
-VENDOR=samsung
-DEVICE=v2awifi
+export DEVICE=v2awifi
+export DEVICE_COMMON=v2a-common
+export DEVICE_UNIVERSAL_COMMON=universal5420-common
+export VENDOR=samsung
 
 export INITIAL_COPYRIGHT_YEAR=2017
 

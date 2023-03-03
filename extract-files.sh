@@ -17,8 +17,10 @@
 
 set -e
 
-VENDOR=samsung
-DEVICE=v2awifi
+export DEVICE=v2awifi
+export DEVICE_COMMON=v2a-common
+export DEVICE_UNIVERSAL_COMMON=universal5420-common
+export VENDOR=samsung
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
